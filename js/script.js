@@ -5,14 +5,14 @@ let boxClass = "";
 const rowElement = document.querySelector(".row");
 
 for (i = 1; i <= 100; i++) {
-    if (i % 15 == 0) {
+    if (i % 15 === 0) {
         divisionFact = "FizzBuzz";
         boxClass = " fizz-buzz";
-    } else if (i % 5 == 0) {
+    } else if (i % 5 === 0) {
         divisionFact = "Buzz";
         boxClass = " buzz";
 
-    } else if (i % 3 == 0) {
+    } else if (i % 3 === 0) {
         divisionFact = "Fizz";
         boxClass = " fizz";
     }else{
