@@ -1,6 +1,6 @@
 // variabili di appoggio
-let divisionFact = "";
-let boxClass = "";
+let divisionFact;
+let boxClass;
 // variabili DOM
 const rowElement = document.querySelector(".row");
 
