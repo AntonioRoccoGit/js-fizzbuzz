@@ -4,7 +4,7 @@ let boxClass;
 // variabili DOM
 const rowElement = document.querySelector(".row");
 
-for (i = 1; i <= 100; i++) {
+for (i = 1; i <= 105; i++) {
     if (i % 15 === 0) {
         divisionFact = "FizzBuzz";
         boxClass = " fizz-buzz";

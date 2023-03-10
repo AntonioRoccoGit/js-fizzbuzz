@@ -9,10 +9,12 @@ body {
 .container {
     width: 80%;
     margin: 0 auto;
-    text-align: center;
 }
 
-.container h1 {
+h1 {
+    width: 80%;
+    margin: 2rem auto;
+    text-align: center;
     color: white;
     font-weight: 700;
     font-size: 4rem;
@@ -57,4 +59,14 @@ body {
     --fizz-bgnd: #0BD6A1;
     --buzz-bgnd: #FAFF00;
     --fizz-buzz-bgnd: #F0466F;
+}
+
+@media screen and (max-width:768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .col {
+        width: calc(100% / 4 - (60px / 4));;
+    }
+
 }
