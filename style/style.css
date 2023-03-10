@@ -1,0 +1,60 @@
+/* **********|COMMON|*********** */
+body {
+    background-color: var(--main-bgnd);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* **********|LAYOUT|*********** */
+/* contaiener */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+/* fizz buzz row and cell */
+.row {
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.col {
+    width: calc(100% / 7 - (60px / 7));
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: bold;
+    /* debug */
+    background-color: var(--normal-cell-bgnd);
+}
+
+.col.fizz {
+    background-color: var(--fizz-bgnd);
+}
+
+.col.buzz {
+    background-color: var(--buzz-bgnd);
+}
+
+.col.fizz-buzz {
+    background-color: var(--fizz-buzz-bgnd);
+}
+
+/* **********|VARIABLES|*********** */
+/* color */
+:root {
+    /* bgnd */
+    --main-bgnd: #083B4C;
+    --normal-cell-bgnd: #1389B2;
+    --fizz-bgnd: #0BD6A1;
+    --buzz-bgnd: #FAFF00;
+    --fizz-buzz-bgnd: #F0466F;
+}
